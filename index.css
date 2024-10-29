@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.wrapper{
+    width: 100vw;
+    height: 100vh;
+    background: rgb(238,174,202);
+    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(2,26,56,1) 67%);    display: grid;
+    place-items: center;
+}
+.game-info{
+    color: rgb(85, 82, 82);
+    position: absolute;
+    top: 3rem;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgb(206, 206, 199);
+    border-radius: 1rem;
+    border:1px solid rgb(222, 222, 216);
+    padding: 0.5rem 3rem;
+    text-align: center;
+}
+
+.tic-tac-toe{
+    width: 90%;
+    max-width: 20rem;
+    background-color: rgba(222, 222, 216);
+    border-radius: 1rem;
+    border: 1px solid rgb(222, 222, 216) ;
+    padding: 2rem;
+    display: grid;
+    grid-template-columns:repeat(3,1fr);
+    aspect-ratio: 1/1;
+}
+.box{
+    position: relative;
+    width: 100%;
+    aspect-ratio: 1/1;
+    cursor: pointer;
+    font-size: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.box1,.box2,.box4,.box5{
+    border-right: 2px solid rgb(130, 127, 127);
+    border-bottom: 2px solid rgb(130, 127, 127) ;
+}
+.box3,.box6{
+    border-bottom: 2px solid rgb(130, 127, 127);
+}
+.box7,.box8{
+    border-right: 2px solid rgb(130, 127, 127);
+}
+
+.btn{
+    font-size: ;
+    color: rgb(82, 80, 80);
+    position: absolute;
+    bottom: 3rem;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgb(255, 255, 225);
+    padding: 0.5rem 2rem ;
+    cursor: pointer;
+    border-radius: 1rem;
+    /* display: none; */
+}
+.btn.active{
+    display: flex;
+
+}
+
+.win{
+    background-color: rgb(149, 241, 149);
+}
